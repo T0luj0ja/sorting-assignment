@@ -1,0 +1,17 @@
+// Objective
+ 
+
+// Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands. Each time we take a new card we put it in the right place in our hand. 
+// Instructions
+// Each time work only with the first i-1 element from of the array
+// Pick element arr[i] and insert it into sorted sequence in the array from 0 to i-1.
+
+INSERTION-SORT-ALGO(A: array)
+1 for j = 2 to A.length
+2   key = A[j]
+3   //Insert A[j] into the sorted sequence A[1...j-1]
+4   i = j - 1
+5   while i > 0 and A[i] > key
+6      A[i+1] = A[i]
+7      i = i - 1
+8   A[i+1] = key
